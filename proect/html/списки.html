@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang = "ru">
+  <head> 
+    <meta charset="UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <Link rel = "stylesheet" href = "../styles/style.css"></Link>
+    <title>Списки</title>
+  </head>
+  <body>
+    <h3>Списки</h3>
+    <p>
+      Списком называется взаимосвязанный набор отдельных фраз или предложений. Списки предоставляют 
+      возможность упорядочить и систематизировать разные данные и представить их в наглядном и удобном 
+      для пользователя виде.
+    </p>
+    <h3>В HTML существует три вида списков:</h3>
+    <div id="spisok">
+      <ul>
+        <a href="#ul"><li>Маркированный (неупорядоченный) список;</li></a>
+        <a href="#ol"><li>Нумерованный (упорядоченный) список;</li></a>
+        <a href="#dl"><li>Список описаний.Маркированный список;</li></a>
+      </ul>
+    </div>
+    <h3 id="ul">Маркированный</h3>
+    <p>      
+      Маркированный или неупорядоченный список определяется тем, что перед каждым элементом 
+      списка добавляется небольшой маркер, обычно в виде закрашенного кружка. Сам список 
+      формируется с помощью элемента <span><</span><span>ul</span><span>></span> 
+      (от англ. Unordered List), а каждый пункт списка начинается с элемента 
+      <span><</span><span>li</span><span>></span> (от англ. List Item), как показано ниже. <br>
+    </p>
+    <h3>Список цифровых значений</h3>
+    <div>
+      <ul>
+        <li>значение 1</li>
+        <li>значение 2</li>
+        <li>значение 3</li>
+      </ul>  
+    </div> 
+    <pre>
+      <code>
+        <span><</span><span>ul</span><span>></span>
+          <span><</span><span>li</span><span>></span><span class="span-text">Значение</span><span><</span><span>/li</span><span>></span>
+          <span><</span><span>li</span><span>></span><span class="span-text">Значение</span><span><</span><span>/li</span><span>></span>
+          <span><</span><span>li</span><span>></span><span class="span-text">Значение</span><span><</span><span>/li</span><span>></span>
+        <span><</span><span>/ul</span><span>></span>
+      </code>
+    </pre>
+    <h3>Вложенные списки</h3>
+    <p>
+      Кроме того, один список <span><</span><span>ul</span><span>></span> можно вкладывать в другой, 
+      опять же, внутрь <span><</span><span>li</span><span>></span><span><</span><span>/li</span><span>></span>
+    </p>
+    <pre>
+      <code>
+      <span><</span><span>ul</span><span>></span>
+        <span><</span><span>li</span><span>></span><span class="span-text">Подзаголовок 1</span><span><</span><span>/li</span><span>></span>
+        <span><</span><span>li</span><span>></span>
+          <span><</span><span>ul</span><span>></span>
+            <span><</span><span>li</span><span>></span><span class="span-text">Значение</span><span><</span><span>/li</span><span>></span>
+            <span><</span><span>li</span><span>></span><span class="span-text">Значение</span><span><</span><span>/li</span><span>></span>
+            <span><</span><span>li</span><span>></span><span class="span-text">Значение</span><span><</span><span>/li</span><span>></span>
+          <span><</span><span>/ul</span><span>></span>
+        <span><</span><span>/li</span><span>></span>
+        <span><</span><span>li</span><span>></span><span class="span-text">Подзаголовок 2</span><span><</span><span>/li</span><span>></span>
+        <span><</span><span>li</span><span>></span>
+          <span><</span><span>ul</span><span>></span>
+            <span><</span><span>li</span><span>></span><span class="span-text">Значение</span><span><</span><span>/li</span><span>></span>
+            <span><</span><span>li</span><span>></span><span class="span-text">Значение</span><span><</span><span>/li</span><span>></span>
+            <span><</span><span>li</span><span>></span><span class="span-text">Значение</span><span><</span><span>/li</span><span>></span>
+          <span><</span><span>/ul</span><span>></span>
+        <span><</span><span>/li</span><span>></span>
+        <span><</span><span>li</span><span>></span><span class="span-text">Подзаголовок 3</span><span><</span><span>/li</span><span>></span>
+        <span><</span><span>li</span><span>></span>
+          <span><</span><span>ul</span><span>></span>
+            <span><</span><span>li</span><span>></span><span class="span-text">Значение</span><span><</span><span>/li</span><span>></span>
+            <span><</span><span>li</span><span>></span><span class="span-text">Значение</span><span><</span><span>/li</span><span>></span>
+            <span><</span><span>li</span><span>></span><span class="span-text">Значение</span><span><</span><span>/li</span><span>></span>
+          <span><</span><span>/ul</span><span>></span>
+        <span><</span><span>/li</span><span>></span>
+      <span><</span><span>/ul</span><span>></span>
+      </code>
+    </pre>
+    <h3 id="ol">Нумерованный список</h3>
+    <p>
+      Нумерованные или упорядоченные списки представляют собой набор пунктов с их порядковыми номерами. 
+      Вид и тип нумерации зависит от атрибутов элементов <span><</span><span>ol</span><span>></span> 
+      (от англ. Ordered List), который и применяется для создания списка. Каждый пункт нумерованного 
+      списка обозначается элементом <span><</span><span>li</span><span>></span>, как показано ниже. 
+    </p>
+    <h3>Список буквенных значений</h3>
+    <div>
+      <ol>
+        <li>значение a</li>
+        <li>значение b</li>
+        <li>значение c</li>
+      </ol>
+    </div>  
+    <pre>
+      <code>
+      <span><</span><span>ol</span><span>></span>
+        <span><</span><span>li</span><span>></span><span class="span-text">Значение</span><span><</span><span>/li</span><span>></span>
+        <span><</span><span>li</span><span>></span><span class="span-text">Значение</span><span><</span><span>/li</span><span>></span>
+        <span><</span><span>li</span><span>></span><span class="span-text">Значение</span><span><</span><span>/li</span><span>></span>
+      <span><</span><span>/ol</span><span>></span>
+      </code>
+    </pre>
+    <h3 id="dl">Список описаний</h3>
+    <p>
+      Список описаний состоит из двух элементов — термина и его описания. Сам список задаётся с помощью элемента 
+      <span><</span><span>dl</span><span>></span> (от англ. Description List), термин — элементом 
+      <span><</span><span>dt</span><span>></span> (от англ. Definition Term), а его описание — с помощью элемента 
+      <span><</span><span>dd</span><span>></span> (от англ. Description).
+    </p>
+    <h3>Список терминов</h3>
+    <div>
+      <dl>
+        <dt>Термин 1</dt>
+          <dd>Описание термина 1</dd>
+        <dt>Термин 2</dt>
+          <dd>Описание термина 2</dd>
+        <dt>Термин 3</dt>
+          <dd>Описание термина 3</dd>
+     </dl>
+    </div>
+    <pre>
+      <code>
+      <span><</span><span>dl</span><span>></span>
+        <span><</span><span>dt</span><span>></span><span class="span-text">Первый термин</span><span><</span><span>/dt</span><span>></span>
+        <span><</span><span>dd</span><span>></span><span class="span-text">Описание первого термина</span><span><</span><span>/dd</span><span>></span>
+        <span><</span><span>dt</span><span>></span><span class="span-text">Второй термин</span><span><</span><span>/dt</span><span>></span>
+        <span><</span><span>dd</span><span>></span><span class="span-text">Описание второго термина</span><span><</span><span>/dd</span><span>></span>
+      <span><</span><span>/dl</span><span>></span>
+      </code>
+    </pre>
+    <p>
+      Список описаний хорошо подходит для расшифровки терминов, создания глоссария, словаря, справочника и т. д. В примере 8 показано одно из возможных использований этого вида списка.
+    </p>
+    <footer>
+      <a href="../html/Проектирование и разработка пользовательских интерфейсов.html">Вернуться к выбору темы</a><br>
+      <a href="">Перейти на главную страницу</a>
+    </footer>
+  </body>
+</html>
